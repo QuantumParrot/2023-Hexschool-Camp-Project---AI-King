@@ -1,0 +1,68 @@
+/* header */
+
+.header .material-icons {
+    font-size: 24px; // BS variable
+}
+
+@media (max-width:375px) {
+    .header {
+        padding: 28px 0px;
+    }
+    .header .logo {
+        width: 147px;
+    }
+}
+
+/* ai-tools */
+
+.ai-tools {
+    @extend .bg-white;
+    @extend .py-lg-11;
+    @extend .py-9;
+    border-radius: 160px;
+}
+
+.filter-list {
+    @extend .nav;
+    @extend .text-muted;
+    gap: 8px;
+    a {
+        @extend .px-3;
+        @extend .py-2;
+        @extend .rounded-4;
+        &:hover {
+            background: $light-gray; // Project variable
+            color: $black;
+            font-weight: $font-weight-bold; // BS variable
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .ai-tools {
+        border-radius: 20px;
+    }
+    .filter {
+        order: 1;
+    }
+    .filter-list {
+        order: 2;
+    }
+}
+
+/* footer */
+
+.footer .material-icons {
+    font-size: $font-size-base; // BS variable
+}
+
+@media (max-width: 767px) {
+    .footer {
+        position: relative;
+    }
+    .back-to-top {
+        position: absolute;
+        top: 32px;
+        right: 0px;
+    }
+}

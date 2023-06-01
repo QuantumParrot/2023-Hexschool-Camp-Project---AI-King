@@ -1,0 +1,85 @@
+/* index > index-banner */
+
+.index-banner {
+    margin-bottom: 100px;
+}
+
+@media (max-width:375px) {
+    .index-banner{
+        margin-bottom: 180px;
+    }
+}
+
+/* index > service > service-title & info */
+
+@media (max-width:375px) {
+    .service-title {
+        font-size: $h5-font-size; // BS variable
+    }
+    .service-info {
+        font-size: $h2-font-size; // BS variable
+    }
+}
+
+/* index > pros */
+
+.pros .material-icons {
+    font-size: 80px;
+}
+
+@media (max-width:375px) {
+    .pros-title {
+        font-size: $h2-font-size; // BS variable
+    }
+}
+
+/* index > partner > enterprise */
+
+.enterprise {
+    @extend .d-flex;
+    @extend .overflow-x-scroll;
+    position: relative;
+    &::before, &::after {
+        content:'';
+        position: sticky;
+        width: 200px;
+        height: 80px;
+    } 
+    &::before {
+        top: 0;
+        left: 0;
+        padding-right: 200px;
+        background: linear-gradient(90deg,rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.99),rgba(0, 0, 0, 0.97),rgba(0, 0, 0, 0.93),rgba(0, 0, 0, 0.88),rgba(0, 0, 0, 0.82),rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.67),rgba(0, 0, 0, 0.59),rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.41),rgba(0, 0, 0, 0.33),rgba(0, 0, 0, 0.24),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0.07),rgba(0, 0, 0, 0));
+    }
+    &::after {
+        top: 0;
+        right: 0;
+        padding-left: 200px;
+        background: linear-gradient(270deg,rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.99),rgba(0, 0, 0, 0.97),rgba(0, 0, 0, 0.93),rgba(0, 0, 0, 0.88),rgba(0, 0, 0, 0.82),rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.67),rgba(0, 0, 0, 0.59),rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.41),rgba(0, 0, 0, 0.33),rgba(0, 0, 0, 0.24),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0.07),rgba(0, 0, 0, 0));
+    }
+    img {
+        width: 160px;
+        height: 40px;
+    }
+}
+
+/* 隱藏Ｘ軸：Chrome, Safari, Opera */
+
+.enterprise::-webkit-scrollbar {
+    display: none;
+}
+
+/* 隱藏Ｘ軸：IE, Edge, Firefox */
+
+.enterprise {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* index > partner > recommend */
+
+.recommend {
+    .card {
+        background: #1A1A1A;
+    }
+}
