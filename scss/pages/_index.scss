@@ -91,10 +91,10 @@
     bottom: 0px;
     .swiper-pagination-bullet {
         background-color: $dark-gray;
-        &:hover {
-            background-color: $white;
-            transform: scale(1.5);
-            vertical-align: middle;
-        }
+    }
+    .swiper-pagination-bullet-active {
+        background-color: $white;
+        transform: scale(1.5);
+        vertical-align: middle;
     }
 }

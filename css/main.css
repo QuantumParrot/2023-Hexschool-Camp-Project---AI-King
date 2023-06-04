@@ -16361,7 +16361,7 @@ img {
 .swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
   background-color: #525252;
 }
-.swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet:hover {
+.swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet-active {
   background-color: #fff;
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
