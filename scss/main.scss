@@ -1,8 +1,31 @@
-@import "bootstrap/bootstrap";
+/* vendors */
 
-@import "component";
-@import "animation";
-@import "layout";
+@import "vendors/bootstrap/bootstrap.scss";
 
-@import "index";
-@import "pricing";
+/* utils */
+
+@import "utils/variable";
+
+/* base */
+
+@import "base/base";
+
+/* componenets */
+
+@import "components/animation";
+@import "components/buttons";
+@import "components/card";
+@import "components/components";
+@import "components/images";
+@import "components/inputs";
+@import "components/pagination";
+
+/* layout */
+
+@import "layout/layout";
+
+
+/* pages */
+
+@import "pages/index";
+@import "pages/pricing";

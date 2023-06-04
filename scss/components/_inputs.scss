@@ -1,0 +1,19 @@
+/* search-bar */
+
+.search {
+    position: relative;
+    &-bar {
+        width: 100%;
+        @extend .bg-secondary;
+        @extend .px-9;
+        @extend .py-4;
+        @extend .rounded-4;
+        border: 1px solid $light-gray; // Project variable
+    }
+    .material-icons {
+        color: $gray;
+        position: absolute;
+        top: 20px;
+        left: 43px;
+    }
+}

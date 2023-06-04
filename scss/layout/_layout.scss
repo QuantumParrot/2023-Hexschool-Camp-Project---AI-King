@@ -38,7 +38,7 @@
     }
 }
 
-@media (max-width:768px) {
+@media (max-width: 991px) { /* 原本寫 768px 由於 991px 開始就會跑版了，所以進行調整 */
     .ai-tools {
         border-radius: 20px;
     }
