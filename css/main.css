@@ -16209,9 +16209,6 @@ img {
 .pagination .page:hover {
   background: #F2F2F2;
 }
-.pagination .page .material-icons {
-  font-size: 0.875rem;
-}
 .pagination .page.active {
   cursor: default;
   background: #000;
@@ -16219,6 +16216,9 @@ img {
 }
 .pagination .page.active:hover {
   opacity: 1;
+}
+.pagination .page .material-icons {
+  font-size: 0.875rem;
 }
 
 /* layout */

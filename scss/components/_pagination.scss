@@ -13,16 +13,16 @@
         &:hover{
             background: $light-gray; // Project variable
         }
+        &.active {
+            cursor: default;
+            background: $black; // BS variable
+            color: $white; // BS variable
+            &:hover{
+                opacity: 1;
+            }
+        }
         .material-icons {
             font-size: $font-size-sm; // BS variable
-        }
-    }
-    .page.active {
-        cursor: default;
-        background: $black; // BS variable
-        color: $white; // BS variable
-        &:hover{
-            opacity: 1;
         }
     }
 }
