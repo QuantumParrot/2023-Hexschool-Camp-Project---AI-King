@@ -5,6 +5,7 @@ $(document).ready(function(){
         $(this).children('.nav-menu-icon').toggleClass('d-none');
         $(this).children('.clear-icon').toggleClass('d-none');
         $(this).parent().siblings('.nav-menu').toggleClass('d-none');
+        $('main').toggleClass('d-none');
     });
     // btn-filter
     $('.filter-menu').hide();

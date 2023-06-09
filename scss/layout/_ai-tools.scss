@@ -21,6 +21,13 @@
             font-weight: $font-weight-bold; // BS variable
         }
     }
+    &::-webkit-scrollbar {
+        display: none;
+    };
+    @extend .flex-nowrap;
+    @extend .overflow-x-scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 @media (max-width: 991px) { /* 原本寫 768px 由於 991px 開始就會跑版了，所以進行調整 */

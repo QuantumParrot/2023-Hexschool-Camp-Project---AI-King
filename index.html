@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="container">
-        <!-- layout/header -->
+    <!-- layout/header -->
+    <header class="container">
         <div class="header navbar py-md-4 border-bottom border-white fw-bold">
             <!-- components/images: logo -->
             <h1><a href="index.html"><img class="logo" src="img/logo.png" alt="AI 工具王"></a></h1>
-            <!-- layout: header > material-icons -->
+            <!-- layout/header: material-icons -->
             <div class="nav-menu-state">
                 <span class="material-icons nav-menu-icon d-md-none">menu</span>
                 <span class="material-icons clear-icon d-none">clear</span>
@@ -28,10 +28,13 @@
                 <li class="nav ms-4"><a href="pricing.html">定價</a></li>
             </ul>
         </div>
-        <ul class="nav-menu d-none my-11 display-2 text-center">
+        <ul class="nav-menu d-none my-12">
             <li><a href="index.html">首頁</a></li>
             <li><a href="pricing.html">定價</a></li>
         </ul>
+    </header>
+    <main>
+    <div class="container">
         <!-- pages/index: index-banner -->
         <div class="index-banner">
             <h2 class="my-7 display-1">
@@ -60,14 +63,14 @@
         <!-- pages/index: pros -->
         <ul class="pros row g-3">
             <li class="col-md-4">
-                <div class="px-md-7 py-md-9 px-4 py-7 border rounded-4 border-white">
+                <div class="px-md-7 py-md-9 px-4 py-7 border rounded-4 border-white h-100">
                     <span class="material-icons">flash_on</span>
                     <h2 class="pros-title py-4">快速</h2>
                     <p>我們先進的推理基礎設施提供了極短的響應時間，讓你的產品服務不間斷。</p>
                 </div>
             </li>
             <li class="col-md-4">
-                <div class="px-md-7 py-md-9 px-4 py-7 border rounded-4 border-white">
+                <div class="px-md-7 py-md-9 px-4 py-7 border rounded-4 border-white h-100">
                     <span class="material-icons">auto_awesome</span>
                     <h2 class="pros-title py-4">靈活</h2>
                     <p>我們的服務可以根據您的需求進行靈活調整，同時還可以滿足不同項目和預算的需求。</p>
@@ -184,7 +187,7 @@
                 <input type="search" class="search-bar" name="search-ai" placeholder="輸入關鍵字搜尋">
                 <span class="material-icons">search</span>
             </div>
-            <div class="navbar mb-lg-7">
+            <div class="navbar mb-7">
                 <!-- components/buttons -->
                 <div class="filter">
                     <a class="btn-filter box-shadow" href="#">
@@ -192,35 +195,35 @@
                         <span class="material-icons">filter_alt</span>
                     </a>
                     <ul class="filter-menu box-shadow mt-1">
-                        <li class="text-muted pb-2">AI模型</li>
-                            <ul class="pb-3 border-bottom border-secondary">
-                                <li class="mb-2"><a href="#">所有模型</a></li>
-                                <li class="mb-2"><a href="#">卡卡</a></li>
-                                <li class="mb-2"><a href="#">杰杰</a></li>
-                                <li class="mb-2"><a href="#">琪琪</a></li>
-                                <li><a href="#"></a>昊昊</li>
-                            </ul>
-                        <li class="text-muted pt-3 pb-2">所有類型</li>
-                            <ul>
-                                <li class="mb-2"><a href="#">全部</a></li>
-                                <li class="mb-2"><a href="#">聊天</a></li>
-                                <li class="mb-2"><a href="#">影像辨識</a></li>
-                                <li class="mb-2"><a href="#">翻譯</a></li>
-                                <li class="mb-2"><a href="#">行銷</a></li>
-                                <li class="mb-2"><a href="#">克服</a></li>
-                                <li><a href="#">生產力</a></li>
-                            </ul>
+                        <li class="text-muted pb-2"><small>AI模型</small></li>
+                        <ul class="pb-3 border-bottom border-secondary">
+                            <li class="mb-2"><a href="#">所有模型</a></li>
+                            <li class="mb-2"><a href="#">卡卡</a></li>
+                            <li class="mb-2"><a href="#">杰杰</a></li>
+                            <li class="mb-2"><a href="#">琪琪</a></li>
+                            <li><a href="#"></a>昊昊</li>
+                        </ul>
+                        <li class="text-muted pt-3 pb-2"><small>所有類型</small></li>
+                        <ul>
+                            <li class="mb-2"><a href="#">全部</a></li>
+                            <li class="mb-2"><a href="#">聊天</a></li>
+                            <li class="mb-2"><a href="#">影像辨識</a></li>
+                            <li class="mb-2"><a href="#">翻譯</a></li>
+                            <li class="mb-2"><a href="#">行銷</a></li>
+                            <li class="mb-2"><a href="#">克服</a></li>
+                            <li><a href="#">生產力</a></li>
+                        </ul>
                     </ul>
                 </div>
                 <!-- layout: ai-tools > filter-list -->
-                <ul class="filter-list">
-                    <li><a href="#">全部</a></li>
-                    <li><a href="#">聊天</a></li>
-                    <li><a href="#">影像辨識</a></li>
-                    <li><a href="#">翻譯</a></li>
-                    <li><a href="#">行銷</a></li>
-                    <li><a href="#">客服</a></li>
-                    <li><a href="#">生產力</a></li>
+                <ul class="filter-list mt-3 mt-lg-0">
+                    <li class="flex-shrink-0"><a href="#">全部</a></li>
+                    <li class="flex-shrink-0"><a href="#">聊天</a></li>
+                    <li class="flex-shrink-0"><a href="#">影像辨識</a></li>
+                    <li class="flex-shrink-0"><a href="#">翻譯</a></li>
+                    <li class="flex-shrink-0"><a href="#">行銷</a></li>
+                    <li class="flex-shrink-0"><a href="#">客服</a></li>
+                    <li class="flex-shrink-0"><a href="#">生產力</a></li>
                 </ul>                 
                 <!-- components/buttons -->
                 <div class="filter">
@@ -367,7 +370,10 @@
             </ul>
             <a href="index.html"><img class="logo pb-7" src="img/logo.png" alt="AI 工具王"></a>
         </div>
-        <!-- layout/footer -->
+    </div>
+    </main>
+    <!-- layout/footer -->
+    <footer class="container">
         <div class="footer navbar py-6 border-top border-white fw-bold">
             <div class="d-md-flex">
                 <span class="me-md-9">AI工具王 © 2023</span>
@@ -382,8 +388,7 @@
                 <span class="material-icons">arrow_upward</span>
             </a>
         </div>
-    </div>
-</div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.6.4.js"></script>
     <script src="js/main.js"></script>
