@@ -10,7 +10,7 @@
     font-size: $font-size-base*5; // BS Variable
 }
 
-@media (max-width:375px) {
+@media (max-width:767px) {
     .header {
         padding: 28px 0px;
     }
