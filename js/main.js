@@ -24,7 +24,7 @@ $(document).ready(function(){
     // pagination
     $('.page').click(function(e){
         e.preventDefault();
-        $(this).toggleClass('active');
+        $(this).addClass('active');
         $(this).parent().siblings().children('.page').removeClass('active');
     })
     // FAQ
@@ -54,3 +54,5 @@ let swiper = new Swiper ('.swiper',{
         clickable: true,
     }
 });
+
+document.body.addEventListener('click',function(e){console.log(e.target.dataset.page)},false);
