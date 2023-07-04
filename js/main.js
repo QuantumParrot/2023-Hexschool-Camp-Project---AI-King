@@ -54,5 +54,3 @@ let swiper = new Swiper ('.swiper',{
         clickable: true,
     }
 });
-
-document.body.addEventListener('click',function(e){console.log(e.target.dataset.page)},false);
