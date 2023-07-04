@@ -22,11 +22,11 @@ $(document).ready(function(){
         $(this).parent().siblings().children('.btn-filter-text').text($(this).text());
     });
     // pagination
-    $('.page').click(function(e){
-        e.preventDefault();
-        $(this).addClass('active');
-        $(this).parent().siblings().children('.page').removeClass('active');
-    })
+    // $('.page').click(function(e){
+    //     e.preventDefault();
+    //     $(this).addClass('active');
+    //     $(this).parent().siblings().children('.page').removeClass('active');
+    // })
     // FAQ
     $('.answer').hide();
     $('.FAQ-column').click(function(e){

@@ -24,7 +24,7 @@ function getData({ type, sort, page, search }){
         worksData = response.data.ai_works.data;
         pagesData = response.data.ai_works.page;
         renderWorks();
-        changePages();
+        renderPages();
       })
 }
 
@@ -62,9 +62,11 @@ function renderWorks(){
 
 // 切換分頁
 
-function changePages(pagesData) {
+function changePages() {
   document.querySelector('.pagination').addEventListener('click',function(e){
     
+    e.preventDefault();
+
     if (e.target.nodeName == 'UL' ) { return };
     
     let pageId = '';
@@ -81,3 +83,43 @@ function changePages(pagesData) {
 
   },false)
 };
+
+// 渲染分頁
+
+function renderPages() {
+
+  let pageStr = ''
+
+  // 根據總頁數，製作分頁鈕
+
+  for (i=1;i<=pagesData.total_pages;i++){
+    pageStr += /*html*/ `
+    <li><a class="page ${pagesData.current_page == i ? 'active' : ''}" data-page=${i} href="#">${i}</a></li>
+    `
+  };
+
+  // 製作 "下一頁" 按鈕（如果沒有下一頁，該按鈕不會出現）
+
+  if (pagesData.has_next == true) {
+    pageStr += /*html*/ `
+    <li><a class="page" href="#"><span class="material-icons">chevron_right</span></a></li>
+    `
+  };
+  document.querySelector('.pagination').innerHTML = pageStr;
+
+  // 呼叫切換分頁的函式
+
+  changePages(pagesData);
+}
+
+// 切換作品排序
+
+document.querySelector('.new-to-old').addEventListener('click',function(e){
+  data.sort = 0;
+  getData(data);
+},false)
+
+document.querySelector('.old-to-new').addEventListener('click',function(e){
+  data.sort = 1;
+  getData(data);
+},false)
