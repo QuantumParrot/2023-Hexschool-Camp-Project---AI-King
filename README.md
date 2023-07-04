@@ -2,14 +2,14 @@
 
 ***
 
-#### 套件
+#### 使用套件
 
-1. bootstrap
+1. Bootstrap 5
 2. jQuery
 3. Swiper
 
 ***
 
-#### Demo
+#### 網頁展示
 
 https://quantumparrot.github.io/2023-Hexschool-Camp-Project---AI-King/
